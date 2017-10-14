@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.anki.ankiaob.ShowCards">
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_next_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+    <Button
+        android:id="@+id/btn_show_answer"
+        android:layout_width="257dp"
+        android:layout_height="49dp"
+        android:text="Resposta"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="446dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_show_answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="203dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="354dp"
+                android:layout_height="19dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="141dp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="169dp" />
+
+            <Button
+                android:id="@+id/btn_go_to_next_question"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text=">"
+                tools:layout_editor_absoluteX="318dp"
+                tools:layout_editor_absoluteY="445dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/progressBar"
+                android:layout_alignEnd="@+id/progressBar" />
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="br.com.anki.ankiaob.FormCard">
+
+    <item android:id="@+id/menu_form_card_ok"
+        android:title="ok"
+        android:icon="@drawable/ic_confirmar"
+        app:showAsAction="always"/>
+
+</menu>
